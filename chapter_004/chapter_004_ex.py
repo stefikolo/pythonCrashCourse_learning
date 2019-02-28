@@ -28,7 +28,6 @@ print(milion_digit_list)
 # ex 4.5
 print(min(milion_digit_list), max(milion_digit_list), sum(milion_digit_list))
 
-
 # ex 4.6
 for i in range(1, 21, 2):
     print(i)
@@ -37,7 +36,6 @@ for i in range(1, 21, 2):
 threes_list = [x for x in range(3, 31) if x % 3 == 0]
 for num in threes_list:
     print(num)
-
 
 # ex 4.8
 cubes_list = [x ** 3 for x in range(1, 11)]
@@ -56,3 +54,17 @@ pizza_types.append('diavolo')
 print(friend_pizzas, pizza_types)
 # ex 4.13
 # TODO exercise from tuples page 71
+buffet_menu = ('oatmeal', 'scrumbled eggs', 'pizza', 'pork', 'tomato soup',)
+print(type(buffet_menu))
+for item in buffet_menu:
+    print(item)
+
+try:
+    print(buffet_menu[1])
+    buffet_menu[1] = 'koka'
+except TypeError as err:
+    print(f'Operation failed due to: {err}')
+finally:
+    buffet_menu = ('oatmeal', 'koka', 'pizza', 'pie', 'tomato soup',)
+    print(buffet_menu)
+
