@@ -1,0 +1,10 @@
+I've learned so far:
+- variables and data types
+- lists
+- control flows
+- conditional statements
+- dictionaries
+- tuples
+- accepting inputs
+- functions
+- classes
